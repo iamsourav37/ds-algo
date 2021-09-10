@@ -13,7 +13,17 @@ public class DecimalToBinary {
         actualForm.reverse();
         System.out.println(actualForm);
 
+        System.out.println(DtoB(6));
 
+
+
+    }
+
+    static int DtoB(int decimalNumber){
+        if(decimalNumber == 1){
+            return 1;
+        }
+        return decimalNumber%2 + 10 * DtoB(decimalNumber/2);
     }
 
     static String getBinaryRecursively(int decimalNumber){
