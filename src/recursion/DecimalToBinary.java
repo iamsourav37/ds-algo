@@ -1,19 +1,17 @@
 package recursion;
 
-import java.util.Arrays;
-
 public class DecimalToBinary {
     public static void main(String[] args) {
 
-        System.out.println(getBinary(10));
+        System.out.println(getBinary(1000000000));
 
-        String inReverseForm = getBinaryRecursively(10);
+        String inReverseForm = getBinaryRecursively(1000000000);
 
         StringBuilder actualForm = new StringBuilder(inReverseForm);
         actualForm.reverse();
         System.out.println(actualForm);
 
-        System.out.println(DtoB(6));
+        System.out.println(DtoB(1000000000));
 
 
 
