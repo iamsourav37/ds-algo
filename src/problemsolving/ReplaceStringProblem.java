@@ -7,7 +7,7 @@ public class ReplaceStringProblem {
             // OUTPUT : 3.14ppxxp3.14xi3.14
 
                String s = "12iopiqpi";
-            // OUTPUT : 12io3.14q3.14
+            // OUTPUT : 12io3.14q3.14l
 
 
             char[] ch = s.toCharArray();
