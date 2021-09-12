@@ -7,11 +7,12 @@ public class MergeSort {
         int[] ages = {56, 23, 24, 21, 17, 18, 59, 72, 7, 90, 90}; // 11 elements
                     // 0   1    2  3   4   5   6   7  8, 9, 10
 
-        mergeSort(ages);
+        int[] a = {12, 23, 12, 23};
+        mergeSort(a);
 
-        for(int i : ages){
+        for(int i : a){
             System.out.print(i+", ");
-        }
+        } // 12 23 12 23
 
     }
     public static void mergeSort(int[] elements){
@@ -38,7 +39,7 @@ public class MergeSort {
 
 
             while (i<leftArray.length && j<rightArray.length){
-                if(leftArray[i] < rightArray[j]){
+                if(leftArray[i] <= rightArray[j]){
                     elements[k] = leftArray[i];
                     k++;
                     i++;
